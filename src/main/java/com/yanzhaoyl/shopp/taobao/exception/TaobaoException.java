@@ -6,10 +6,11 @@ import lombok.Data;
 
 @Data
 public class TaobaoException extends RuntimeException {
-    private Integer code;
 
-    public TaobaoException(TaobaoEnum taobaoEnum) {
-        super(taobaoEnum.getMessage());
-        this.code = taobaoEnum.getCode();
-    }
+	private Integer code;
+
+	public TaobaoException(TaobaoEnum taobaoEnum) {
+		super(taobaoEnum.getMessage());
+		this.code = taobaoEnum.getCode();
+	}
 }
